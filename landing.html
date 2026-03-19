@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Air Canvas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Gesture Drawing Workspace</p>
+        <h1>Air Canvas</h1>
+        <p class="lead">
+          A single-hand drawing experience with a cleaner control model, stable gesture actions,
+          and a camera-first interface designed to feel like a real creative app.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="./air_canvas.py">Open Python App</a>
+          <a class="btn btn-secondary" href="#gestures">View Gestures</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-glow"></div>
+        <div class="preview-window">
+          <div class="preview-topbar">
+            <span class="dot red"></span>
+            <span class="dot amber"></span>
+            <span class="dot green"></span>
+            <span class="title">Air Canvas Session</span>
+          </div>
+          <div class="preview-canvas">
+            <div class="stroke stroke-a"></div>
+            <div class="stroke stroke-b"></div>
+            <div class="cursor"></div>
+          </div>
+          <div class="preview-footer">
+            <span>Locked Hand</span>
+            <span>Draw / Hover / Brush / Eraser / Colour / Clear</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="panel grid-2">
+        <article class="info-card">
+          <h2>Workflow</h2>
+          <ol class="steps">
+            <li>Raise one hand and let the app scan it.</li>
+            <li>That hand is locked for the session.</li>
+            <li>Use hover to reach the toolbar, draw anywhere on the full screen.</li>
+            <li>Use dedicated gestures for pen, eraser, colour, and clear.</li>
+          </ol>
+        </article>
+        <article class="info-card">
+          <h2>Interaction Model</h2>
+          <p>
+            Actions are intentionally delayed slightly before activation, then placed on cooldown,
+            which reduces false triggers and makes the app feel more controlled.
+          </p>
+          <div class="timing-row">
+            <div>
+              <strong>Action dwell</strong>
+              <span>Short hold before switching</span>
+            </div>
+            <div>
+              <strong>Cooldown</strong>
+              <span>2 seconds after each gesture action</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel" id="gestures">
+        <div class="section-head">
+          <p class="eyebrow">Gesture Map</p>
+          <h2>Distinct actions for distinct poses</h2>
+        </div>
+        <div class="gesture-grid">
+          <article class="gesture-card">
+            <span class="gesture-mark">☝</span>
+            <h3>Draw</h3>
+            <p>Index finger only</p>
+          </article>
+          <article class="gesture-card">
+            <span class="gesture-mark">✌</span>
+            <h3>Hover</h3>
+            <p>Index and middle finger</p>
+          </article>
+          <article class="gesture-card">
+            <span class="gesture-mark">👍</span>
+            <h3>Brush</h3>
+            <p>Thumb only switches back to pen</p>
+          </article>
+          <article class="gesture-card">
+            <span class="gesture-mark">✊</span>
+            <h3>Eraser</h3>
+            <p>Fist switches to eraser mode</p>
+          </article>
+          <article class="gesture-card">
+            <span class="gesture-mark">3F</span>
+            <h3>Colour</h3>
+            <p>Three fingers cycles to the next colour</p>
+          </article>
+          <article class="gesture-card">
+            <span class="gesture-mark">🖐</span>
+            <h3>Clear All</h3>
+            <p>Open palm hold clears the canvas</p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
