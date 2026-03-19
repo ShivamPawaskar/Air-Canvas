@@ -108,4 +108,4 @@ Air Canvas/
 
 ## License
 
-Add a license file if you want to publish this publicly with explicit usage terms...
+Add a license file if you want to publish this publicly with explicit usage terms.
