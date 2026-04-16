@@ -1,4 +1,4 @@
-# Air Canvas 
+# Air Canvas .................
 
 Air Canvas is a gesture-driven drawing app built with Python, OpenCV, and MediaPipe. It uses a single locked hand for interaction and provides a cleaner control model for freehand drawing with gesture-based tool switching.
 
